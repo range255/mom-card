@@ -107,6 +107,25 @@
             max-width: 400px;
             margin: 0 auto 40px;
         }
+        .bottom-badge {
+            width: 80%;
+            max-width: 350px;
+            margin: 0 auto;
+        }
+        .make-btn {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #66b3ff;
+            color: #fff;
+            font-size: 18px;
+            padding: 15px 10px;
+            border-radius: 8px 0 0 8px;
+            writing-mode: vertical-rl;
+            letter-spacing: 2px;
+            z-index: 10;
+        }
         .music-btn {
             position: fixed;
             left: 20px;
@@ -134,6 +153,48 @@
 </div>
 
 <div class="card-content" id="cardContent">
+    <div class="title-img">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ffb3d9;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ff80b3;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <ellipse cx="200" cy="100" rx="180" ry="80" fill="#ffcce0" stroke="#ff99bb" stroke-width="4"/>
+            <g transform="translate(60,30)">
+                <circle cx="0" cy="0" r="15" fill="#ff99bb"/>
+                <circle cx="-12" cy="-10" r="10" fill="#ffb3d9"/>
+                <circle cx="12" cy="-10" r="10" fill="#ffb3d9"/>
+                <circle cx="0" cy="-15" r="10" fill="#ffb3d9"/>
+                <circle cx="-12" cy="10" r="10" fill="#ffb3d9"/>
+                <circle cx="12" cy="10" r="10" fill="#ffb3d9"/>
+                <rect x="-3" y="15" width="6" height="20" fill="#66cc66"/>
+                <ellipse cx="-10" cy="30" rx="8" ry="5" fill="#66cc66" transform="rotate(-30)"/>
+                <ellipse cx="10" cy="30" rx="8" ry="5" fill="#66cc66" transform="rotate(30)"/>
+            </g>
+            <g transform="translate(300,30)">
+                <circle cx="0" cy="0" r="15" fill="#ff99bb"/>
+                <circle cx="-12" cy="-10" r="10" fill="#ffb3d9"/>
+                <circle cx="12" cy="-10" r="10" fill="#ffb3d9"/>
+                <circle cx="0" cy="-15" r="10" fill="#ffb3d9"/>
+                <circle cx="-12" cy="10" r="10" fill="#ffb3d9"/>
+                <circle cx="12" cy="10" r="10" fill="#ffb3d9"/>
+                <rect x="-3" y="15" width="6" height="20" fill="#66cc66"/>
+                <ellipse cx="-10" cy="30" rx="8" ry="5" fill="#66cc66" transform="rotate(-30)"/>
+                <ellipse cx="10" cy="30" rx="8" ry="5" fill="#66cc66" transform="rotate(30)"/>
+            </g>
+            <circle cx="100" cy="50" r="12" fill="#ff6699"/>
+            <circle cx="150" cy="40" r="10" fill="#ff6699"/>
+            <circle cx="220" cy="35" r="10" fill="#ff6699"/>
+            <circle cx="280" cy="55" r="12" fill="#ff6699"/>
+            <polygon points="120,70 125,80 135,80 127,88 130,100 120,93 110,100 113,88 105,80 115,80" fill="#ffdd66"/>
+            <polygon points="260,70 265,80 275,80 267,88 270,100 260,93 250,100 253,88 245,80 255,80" fill="#ffdd66"/>
+            <text x="200" y="110" text-anchor="middle" font-size="60" font-weight="bold" fill="url(#grad1)" stroke="#ff6699" stroke-width="2" font-family="cursive">母亲节快乐</text>
+            <text x="200" y="160" text-anchor="middle" font-size="30" fill="#ff6699" font-weight="bold">LOVE</text>
+        </svg>
+    </div>
+
     <div class="blessing-text">
 to：老妈<br>
 很高兴你陪我们三个长大<br>
@@ -149,39 +210,94 @@ to：老妈<br>
 母亲节快乐<br>
 也不止母亲节，天天快乐
     </div>
+
+    <div class="bottom-badge">
+        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="150" cy="150" r="120" fill="#ff6688"/>
+            <g transform="translate(150,60)">
+                <rect x="-3" y="0" width="6" height="40" fill="#44cc66"/>
+                <path d="M0,-20 C-15,0 15,0 0,20 C15,0 -15,0 0,-20" fill="#ff6688"/>
+            </g>
+            <g transform="translate(90,80)">
+                <rect x="-3" y="0" width="6" height="35" fill="#44cc66"/>
+                <path d="M0,-15 C-12,0 12,0 0,15 C12,0 -12,0 0,-15" fill="#ff9999"/>
+            </g>
+            <g transform="translate(210,80)">
+                <rect x="-3" y="0" width="6" height="35" fill="#44cc66"/>
+                <path d="M0,-15 C-12,0 12,0 0,15 C12,0 -12,0 0,-15" fill="#ff9999"/>
+            </g>
+            <g transform="translate(60,120)">
+                <rect x="-3" y="0" width="6" height="30" fill="#44cc66"/>
+                <path d="M0,-12 C-10,0 10,0 0,12 C10,0 -10,0 0,-12" fill="#ffaa66"/>
+            </g>
+            <g transform="translate(240,120)">
+                <rect x="-3" y="0" width="6" height="30" fill="#44cc66"/>
+                <path d="M0,-12 C-10,0 10,0 0,12 C10,0 -10,0 0,-12" fill="#ffaa66"/>
+            </g>
+            <path d="M60,100 Q150,60 240,100" fill="none" stroke="#ffcce0" stroke-width="10"/>
+            <text x="150" y="90" text-anchor="middle" font-size="28" fill="white" font-weight="bold">HAPPY</text>
+            <text x="150" y="160" text-anchor="middle" font-size="60" fill="white" font-style="italic">Mother's</text>
+            <rect x="50" y="170" width="200" height="40" fill="#ff4466" rx="5"/>
+            <text x="150" y="195" text-anchor="middle" font-size="24" fill="white" letter-spacing="5px">ROUTERK</text>
+            <text x="150" y="240" text-anchor="middle" font-size="40" fill="white" font-weight="bold">DAY</text>
+            <g fill="#44cc66">
+                <ellipse cx="100" cy="260" rx="10" ry="6"/>
+                <ellipse cx="120" cy="270" rx="10" ry="6"/>
+                <ellipse cx="140" cy="275" rx="10" ry="6"/>
+                <ellipse cx="160" cy="275" rx="10" ry="6"/>
+                <ellipse cx="180" cy="270" rx="10" ry="6"/>
+                <ellipse cx="200" cy="260" rx="10" ry="6"/>
+            </g>
+            <g transform="translate(150,260)">
+                <circle cx="0" cy="0" r="15" fill="#ff6688"/>
+                <circle cx="-12" cy="-8" r="8" fill="#ff88aa"/>
+                <circle cx="12" cy="-8" r="8" fill="#ff88aa"/>
+                <circle cx="0" cy="-15" r="8" fill="#ff88aa"/>
+                <circle cx="-12" cy="8" r="8" fill="#ff88aa"/>
+                <circle cx="12" cy="8" r="8" fill="#ff88aa"/>
+                <circle cx="0" cy="0" r="5" fill="#ffdd66"/>
+            </g>
+        </svg>
+    </div>
+    <div class="make-btn">我要制作</div>
 </div>
 
-<audio id="bgm" loop>
-<source src="Blizzard - 颜色(氛围版).mp3" type="audio/mpeg">
+<!-- 直接播放仓库里的 color.mp3 -->
+<audio id="bgm" loop preload="auto">
+<source src="color.mp3" type="audio/mpeg">
 
 
-<button class="music-btn" id="musicBtn">播放</button>
+<button class="music-btn" id="musicBtn">音乐</button>
 
 <script>
 const bgm = document.getElementById('bgm');
 const musicBtn = document.getElementById('musicBtn');
+const envelope = document.getElementById('envelope');
+const cardContent = document.getElementById('cardContent');
 let isPlay = false;
 
-// 点击信封只切换页面，不自动播音乐
-document.getElementById('envelope').addEventListener('click', function(){
-    this.style.opacity = '0';
-    setTimeout(()=>{ this.style.display = 'none'; }, 600);
-    document.getElementById('cardContent').style.display = 'block';
+envelope.addEventListener('click', function(){
+envelope.style.opacity = '0';
+setTimeout(()=>{ envelope.style.display = 'none'; }, 600);
+cardContent.style.display = 'block';
+
+bgm.play().then(()=>{
+isPlay = true;
+musicBtn.innerText = '暂停';
+}).catch(e=>{});
 });
 
-// 必须手动点按钮才播放
-musicBtn.addEventListener('click', function(){
-    if(!isPlay){
-        bgm.play();
-        this.innerText = '暂停';
-        isPlay = true;
-    }else{
-        bgm.pause();
-        this.innerText = '播放';
-        isPlay = false;
-    }
-});
+musicBtn.onclick = function(){
+if(isPlay){
+bgm.pause();
+musicBtn.innerText = '播放';
+isPlay = false;
+}else{
+bgm.play();
+musicBtn.innerText = '暂停';
+isPlay = true;
+}
+};
 </script>
-
 </body>
 </html>
